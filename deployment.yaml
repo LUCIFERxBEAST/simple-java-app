@@ -4,7 +4,7 @@ metadata:
   name: java-app
 spec:
   replicas: 2
-  selectors:
+  selector:
     matchLabels:
       app: java-app
   template:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers: 
       - name: java-app
-        image: <>/java-app:latest
+        image: luciferxbeast/java-app:latest
 ---
 apiVersion: v1
 kind: Service
